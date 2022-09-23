@@ -43,3 +43,4 @@ class Solution {
         
     }
 }
+// we can Implement using Moore's Voting Algorithm as well.
