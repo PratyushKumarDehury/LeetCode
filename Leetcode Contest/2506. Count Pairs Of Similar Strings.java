@@ -64,8 +64,7 @@ class Solution {
 
                 int k;
                 for( k = 0; k < 26; k++){
-                    // if(a[k] == 0 && b[k] != 0) || (a[k] != 0 && b[k] == 0)){
-                        if((a[k]==0 && b[k]!=0) || (a[k]!=0 && b[k]==0)){
+                    if((a[k] == 0 && b[k] != 0) || (a[k] != 0 && b[k] == 0)){ 
                         break;
                     }
                 }
