@@ -33,7 +33,7 @@ class Solution {
     }
 }
 
-// to avoid duplicate permutations by using HashSet to store the unuque permutations list.
+// To avoid duplicate permutations by using HashSet to store the unuque permutations list.
 
 // T.C -> O(n)
 // S.C -> O(n)
