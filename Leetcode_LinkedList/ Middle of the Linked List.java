@@ -13,19 +13,36 @@ class Solution {
 
         // Iterative/Simple Approach
 
-        int count = 0;
-        ListNode temp = head;
-        while(temp != null){
-            count++;
-            temp = temp.next;
-        }
-        count  = count/2;
-        temp = head;
-        while(count-- > 0){
-            temp = temp.next;
-        }
-        return temp;
-    }
+//         int count = 0;
+//         ListNode temp = head;
+//         while(temp != null){
+//             count++;
+//             temp = temp.next;
+//         }
+//         count  = count/2;
+//         temp = head;
+//         while(count-- > 0){
+//             temp = temp.next;
+//         }
+//         return temp;
+//     }
+// }
+
+// Two Pointer Method
+
+ListNode slow = head;
+ListNode fast = slow;
+
+while(fast != null && fast.next != null){
+    slow = slow.next;
+    fast = fast.next.next;
 }
+return slow;
+}
+}
+
+// T.C -> O(N)
+// S.C -> O(1)
+
 
         
